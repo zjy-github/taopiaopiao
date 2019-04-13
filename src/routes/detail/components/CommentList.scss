@@ -1,0 +1,74 @@
+@import "../../../util";
+
+.commentList{
+  padding: 0;
+  list-style: none;
+  
+  li:nth-child(n + 2){
+    margin-top: 24px;
+  }
+  
+  .commentItem{
+
+    .commentUser{
+      display: flex;
+      align-items: center;
+ 
+      &__avatar{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color:#ccc;
+      }
+
+      &__detail{
+        margin-left: 10px;
+
+        @include flex-v-center;
+      }
+
+      &__name{
+        font-size: 16px;
+        font-weight: bold;
+        color: $block;
+        margin-bottom: 6px;
+      }
+
+      &__value{
+        color: #f2a95d;
+        font-weight: bold;
+      }
+    }
+    
+    &__detail{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #bcbcbc;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+
+    &_time{
+      flex: 1;
+    }
+
+    &__zan{
+      width: 120px;
+      text-align: right;
+
+      i{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url("../../../icons/zan-o.svg") 50% / cover no-repeat;
+      }
+
+      &--active i{
+        background: url("../../../icons/zan-solid.svg") 50% / cover no-repeat;
+      }
+    }
+  }
+
+
+}

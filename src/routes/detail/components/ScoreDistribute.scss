@@ -1,0 +1,48 @@
+@import "../../../util";
+
+.scoreDistribute{
+  display: flex;
+  align-items: center;
+
+  .score{
+    width: 100px;
+    text-align: center;
+
+    &__value{
+      font-size: 45px;
+      color: $block;
+      font-weight: 500;
+    }
+
+    &__desc{
+      color: $gray;
+      font-size: 12px;
+    }
+  } 
+
+  .distribute{
+    flex: 1;
+
+    &__item{
+      height: 8px;
+      display: flex;
+      align-items: center;
+
+      &:nth-child(n + 2){
+        margin-top: 3px;
+      }
+    }
+
+    &__btm{
+      flex: 1;
+      width: 100%;
+      margin: 10px;
+      background-color: #ccc;
+    }
+
+    &__top{
+      height: 4px;
+      background-color: #333;
+    }
+  }
+}

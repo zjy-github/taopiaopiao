@@ -1,0 +1,31 @@
+@import "../util";
+
+.lineLink{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+
+    &:nth-child(n + 2){
+        border-top: 1px solid $border;
+    }
+
+    &__title{
+        font-size: 16px;
+        flex: 1;
+        color: #333;
+    }
+ 
+    &__extra{
+        width: auto;
+        font-size: 14px;
+        color: $gray;
+    }
+
+    &__arrow{
+        width: 16px;
+        margin-left: 10px;
+        background: #fff url("../icons/arrow-r.svg") 50%/contain no-repeat;
+    }
+}
