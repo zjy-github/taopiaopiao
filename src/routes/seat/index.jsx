@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import MovieInof from './components/MovieInfo';
 import SeatSelected from './components/SeatSelected';
 import SeatSelector from './container/SeatSelector';
