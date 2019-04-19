@@ -2,7 +2,7 @@
 
 ## 概述
 
-使用React16制作的的WebApp，项目中涉及到一些高阶函数、高阶组件的部分。
+使用React16制作的的WebApp,通过React-Router4实现页面跳转完成单页面应用，UI通过scss实现。
 
 ## 功能
 
@@ -14,7 +14,7 @@
 
 * 电影剧照————以轮播图方式展示电影剧照
 
-* 购票————以canvas模拟电影院购票
+* 购票————以canvas模拟电影院购票,并使用Redux管理状态
 
 * 展示电影详细内容
 
@@ -96,12 +96,16 @@
 │   │   │   ├── index.scss
 │   │   │   └── index.css
 │   │   ├── seat  //选座界面
+│   │   │   ├── action
+│   │   │   │   └── action.js //action
 │   │   │   ├── components
 │   │   │   │   ├── MovieInfo //电影信息
 │   │   │   │   └── SeatSelectd //已选座位
 │   │   │   ├── container
 │   │   │   │   └──SeatSelector.jsx //购票座位
 │   │   │   ├── mock //模拟已售座位数据
+│   │   │   ├── reducers
+│   │   │   │   └── reducer.js //reducer
 │   │   │   ├── index.jsx 
 │   │   │   ├── index.scss
 │   │   │   └── index.css

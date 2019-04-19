@@ -26,6 +26,8 @@
   .user__fellow, .user__fans {
     font-size: 12px;
     margin-bottom: 10px; }
+  .user__line {
+    margin: 0 10px; }
   .user__level {
     width: 50px;
     text-align: center;

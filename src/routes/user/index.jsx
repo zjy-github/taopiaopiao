@@ -17,7 +17,7 @@ const User = () => {
                         <div className="user__name">周杰伦</div>
                         <div>
                             <span className="user__fellow">关注 100</span>
-                            |<span className="user__fans">被关注 10</span>
+                            <span className="user__line">|</span><span className="user__fans">被关注 10</span>
                         </div>
                         <div className="user__level">黄金会员</div>
                     </div>
