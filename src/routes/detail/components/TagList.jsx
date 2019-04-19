@@ -8,7 +8,7 @@ const TagList = ({ data, current, onClick }) => {
       onClick(value);
     }
   }
- 
+
   return (
     <div className="tagList">
       {
